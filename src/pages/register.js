@@ -5,10 +5,6 @@ import RegisterForm from '../components/RegisterForm';
 
 export default function Register() {
 
-  const handleRegister = () => {
-    alert('success login')
-  }  
-
   const goLogin = () => {
     alert('go login')
   }
@@ -18,7 +14,6 @@ export default function Register() {
         <Image style={{width:'295px', height:'210px'}} source={require('../../assets/logIcon.png')}/>
         <Text style={styles.titleRegister}>Register</Text>
         <RegisterForm/>
-        <PrimaryButton info="Register" onPress={handleRegister}/>
         <Text style={{marginTop:'15px'}}>Already Have an Account? <Text onPress={goLogin} style={styles.goLogin}>Login</Text></Text>
         <StatusBar style="auto" />
     </View>

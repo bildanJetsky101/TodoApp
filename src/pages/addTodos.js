@@ -2,8 +2,17 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TextInput } from 'react-native';
 import PrimaryButton from '../components/PrimaryButton';
 import TodoForm from '../components/TodoForm'
+import { useState } from 'react'
 
-export default function AddCategory() {
+export default function AddTodo() {
+
+  const [form, setForm] = useState({
+     name:'',
+     email:'',
+     password:''
+  })
+
+  console.log(form)
 
   const handleSubmit = () => {
     alert('success submit')
@@ -12,7 +21,7 @@ export default function AddCategory() {
   return (
     <View style={styles.container}>
         <Text style={styles.title}>Add List</Text>
-        <TodoForm/>
+        <TodoForm setForm={setForm}/>
         <PrimaryButton info="Add List" onPress={handleSubmit}/>
     <StatusBar style="auto" />
     </View>

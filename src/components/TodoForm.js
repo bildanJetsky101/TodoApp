@@ -2,6 +2,7 @@
 import { StyleSheet, View, TextInput } from 'react-native';
 import SelectList from 'react-native-dropdown-select-list';
 import { useEffect, useState } from 'react';
+import { TextArea } from 'native-base'
 
 export default function TodoForm() {
 
@@ -32,7 +33,7 @@ export default function TodoForm() {
          maxHeight={300}
          dropdownStyles={{backgroundColor:'rgba(0, 0, 0, 0.1)', color:'white', marginBottom:'10px', borderStyle:'none'}}
          />
-        <TextInput style={styles.input} placeholder='' value='cc-exp-day'/> 
+         <TextArea style={styles.textArea} h={100} placeholder="Description" w="100%"  /> 
     </View>
   );
 }
@@ -57,6 +58,11 @@ const styles = StyleSheet.create({
     borderRadius:"5px",
     color:'rgba(0, 0, 0, 0.3)',
     marginBottom:'15px',
+    borderStyle:'none'
+ },
+ textArea: {
+    fontSize:14,
+    backgroundColor:'rgba(0, 0, 0, 0.1)',
     borderStyle:'none'
  }
 })
