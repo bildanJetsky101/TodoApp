@@ -1,9 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TextInput } from 'react-native';
+import NavigationTab from '../components/Navigation/NavigationTab';
 import PrimaryButton from '../components/PrimaryButton';
 import TodoForm from '../components/TodoForm'
 
-export default function todoList() {
+export default function TodoList() {
 
   const handleSubmit = () => {
     alert('success submit')
@@ -15,6 +16,7 @@ export default function todoList() {
         <TodoForm/>
         <PrimaryButton info="Add List" onPress={handleSubmit}/>
     <StatusBar style="auto" />
+    <NavigationTab />
     </View>
   );
 }

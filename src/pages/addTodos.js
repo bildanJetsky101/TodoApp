@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, TextInput } from 'react-native';
 import PrimaryButton from '../components/PrimaryButton';
 import TodoForm from '../components/TodoForm'
 import { useState } from 'react'
+import NavigationTab from '../components/Navigation/NavigationTab';
 
 export default function AddTodo() {
 
@@ -24,6 +25,7 @@ export default function AddTodo() {
         <TodoForm setForm={setForm}/>
         <PrimaryButton info="Add List" onPress={handleSubmit}/>
     <StatusBar style="auto" />
+    <NavigationTab />
     </View>
   );
 }

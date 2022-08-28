@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TextInput } from 'react-native';
 import PrimaryButton from '../components/PrimaryButton';
 import CategoryButton from '../components/categoryButton/categoryButton';
+import NavigationTab from '../components/Navigation/NavigationTab';
 
 export default function AddCategory() {
 
@@ -27,6 +28,7 @@ export default function AddCategory() {
         </View>
     </View>
     <StatusBar style="auto" />
+    <NavigationTab />
     </View>
   );
 }

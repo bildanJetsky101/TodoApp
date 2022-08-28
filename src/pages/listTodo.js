@@ -2,6 +2,7 @@
 import { StyleSheet, Image, Text, View } from "react-native"
 import CategoryCard from "../components/CategoryCard"
 import CategorySearchFilter from "../components/CategorySearchFilter"
+import NavigationTab from "../components/Navigation/NavigationTab"
 
 export default function ListTodo(){
     return(
@@ -19,6 +20,7 @@ export default function ListTodo(){
                 <CategoryCard category='Study' name='Go' date='12 September 2023' color={false}/>
                 <CategoryCard category='Workout' name='Leg-day' date='12 September 2023' color={true}/>
             </View>
+            <NavigationTab />
         </View>
     )
 }
